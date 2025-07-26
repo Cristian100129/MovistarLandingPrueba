@@ -1,0 +1,331 @@
+header {
+  position: relative;
+  width: 100%;
+  height: 40vh;
+}
+
+/* 🔹 Estilos generales */
+.header-container {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 100%;
+  padding: 0 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  z-index: 1;
+  background-color: transparent;
+}
+
+.header-container:hover {
+  transform: scale(1.02);
+}
+
+/* 🔹 Estilos del formulario */
+.header-form {
+  background-color: #0054a6;
+  border-radius: 8px;
+  padding: 20px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  color: white;
+  transition: transform 0.3s ease-in-out;
+}
+
+.title-header-form {
+  font-size: 1.5rem !important;
+  font-weight: bold;
+  color: #fff;
+}
+
+.title-header-form-h3 {
+  font-size: 1rem !important;
+  font-weight: 500;
+  color: #e6f7ff;
+  margin-bottom: 15px;
+}
+
+/* 🔹 Estilos de los inputs */
+.header-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.header-form input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #00a1e0;
+  /* Azul Movistar claro */
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.header-form input[type="text"]:focus {
+  border: 2px solid #00c3ff;
+  /* Azul más claro */
+  box-shadow: 0 0 10px rgba(0, 195, 255, 0.5);
+}
+
+/* 🔹 Checkbox y enlace */
+.header-form span {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #e6f7ff;
+}
+
+.header-form span input[type="checkbox"] {
+  margin-right: 8px;
+  accent-color: #00a1e0;
+}
+
+.header-form span a {
+  color: #00c3ff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 4px;
+}
+
+.header-form span a:hover {
+  text-decoration: underline;
+}
+
+/* 🔹 Botón */
+.header-form button {
+  width: 100%;
+  padding: 12px;
+  background: #00c3ff;
+  /* Azul Movistar */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: bold;
+}
+
+.header-form button:hover {
+  background: #0078d4;
+  /* Azul Movistar oscuro */
+  transform: scale(1.05);
+}
+
+/* 🔹 Responsividad */
+@media (max-width: 968px) {
+  .header-container {
+    display: none;
+  }
+}
+
+.planes {
+  background: url(../../public/img/header/pc/BannerPcPlanes.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hogar {
+  background: url(../../public/img/header/pc/BannerPcHogar.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.tegnologias {
+  background: url(../../public/img/header/pc/BannerPcTecnologia.webp);
+  background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.movistartotal {
+  background: url(../../public/img/header/pc/BannerPcMovistarTotal.webp);
+  background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.phone-footer {
+  position: fixed;
+  top: 30%;
+  right: 20;
+  background-color: var(--color-primary);
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 940px) {
+  .planes {
+    background: url(../../public/img/header/table/BannerTabletPlanes.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .hogar {
+    background: url(../../public/img/header/table/BannerTabletHogar.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .tegnologias {
+    background: url(../../public/img/header/table/BannerTabletTecnologia.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .movistartotal {
+
+    background: url(../../public/img/header/table/BannerTabletMovistarTotal.webp);
+    background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .phone-footer {
+    top: 80%;
+    right: 3%;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    filter: drop-shadow(2px 4px 6px black);
+    z-index: 5;
+    transition: all 1s ease;
+    font-size: 1.5rem;
+  }
+
+  .phone-footer span {
+    display: none;
+  }
+
+  .phone-footer:hover {
+    width: 125px;
+    right: 4%;
+    transform: scale(1.2);
+    border-radius: 12px;
+  }
+
+  .phone-footer:hover > .phoneNumber {
+    display: block;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .planes {
+
+    background: url(../../public/img/header/movil/BannerMovilPlanes.webp);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .hogar {
+    background: url(../../public/img/header/movil/BannerMovilHogar.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .tegnologias {
+    background: url(../../public/img/header/movil/BannerMovilTecnologia.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .movistartotal {
+    background: url(../../public/img/header/movil/BannerMovilMovistarTotal.webp);
+    background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.promo-text h2 {
+  color: #0072ce;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.promo-text p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.promo-text small {
+  color: gray;
+  font-size: 0.8rem;
+}
+
+.form-izquierda {
+  background-color: #0054a6;
+  border-radius: 8px;
+  padding: 20px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  color: white;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* 🎯 Formulario de la derecha con margen hacia el centro */
+.form-derecha {
+  padding: 20px;
+  width: 717px;
+  margin-left: 23%;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  color: white;
+  transition: transform 0.3s ease-in-out;
+  text-align: justify; /* Justifica todo el texto por defecto */
+  font-size: 170%; /* Tamaño base del texto */
+}
+
+.jv {
+  font-weight: bold;
+}
+
+/* .form-derecha p {
+    text-align: justify;
+    font-size: 170%;
+} */
+
+.form-derecha strong {
+  color: #ffa500;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    gap: 20px;
+  }
+
+  .form-derecha,
+  .form-izquierda {
+    margin: 0; /* Elimina márgenes en dispositivos pequeños */
+  }
+}

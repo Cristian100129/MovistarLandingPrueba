@@ -1,0 +1,205 @@
+/* 
+    Home
+*/
+.home h2{
+    font-size: calc(2.5em + 1vw);
+    font-weight: bold;
+    margin: 20px 0px;
+    text-align: center;
+}
+.home-cards{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px 0px;
+}
+/* 
+    CARDS
+*/
+.card-home{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: .5px solid var(--color-quaternary);
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px #7b7676;
+    overflow: hidden;
+}
+.card-home-header{
+    width: 100%;
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-sextary);
+    color: var(--color-tertiary);
+}
+
+.card-home-header h3{
+    font-size: 2.5em;
+    font-weight: lighter;
+}
+
+.card-home-price{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-quaternary);
+    color: var(--color-sextary);
+}
+.card-home-price h3{
+    font-size: 3em;
+    font-weight: bold;
+    color: var(--color-sextary);
+}
+.card-home button{
+    width: 90%;
+    height: 50px;
+    margin: 5px 0px;
+    background-color: var(--color-quinary);
+    color: var(--color-tertiary);
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ;
+    -moz-transition: all 0.3s ;
+    -ms-transition: all 0.3s ;
+    -o-transition: all 0.3s ;
+}
+.card-home button:hover{
+    color: var(--color-quinary);
+    background-color: #fff;
+    border: 2px solid var(--color-quinary);
+}
+.card-home-icons{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.card-home-icons h3{
+    font-size: 1em;
+    font-weight: lighter;
+}
+.card-home-icons div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-home-icons img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.card-home-mas{
+    width: 70%;
+    padding: 10px 0px !important;
+    display: flex !important;       
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 5px !important;
+    font-size: 12px;
+}
+.mas{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+.mas img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.card-home-descuento{
+    background: orange;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+}
+
+.card-recomendado{
+    width: 100%;
+    background-color: var(--color-quinary);
+    border-radius: 10px 10px 0 0;
+    padding: 12px;
+    text-align: center;
+    color: var(--color-tertiary);
+}
+.card-home-netflix{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-sextary);
+}
+.card-home-netflix > img{
+    width: 200px;
+    object-fit: cover;
+}
+
+
+
+.hogar-card-button{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .hogar-card-button button{
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .button-interesa{
+    background-color: var(--color-quinary);
+    color: var(--color-tertiary);
+    transition: all 0.5s ease;
+  }
+  .hogar-card-button .button-interesa:hover{
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary) !important;
+    color: #ffffff;
+  }
+  
+  .hogar-card-button .button-llamamos{
+    color : var(--color-quinary);
+    background-color: #fff;
+    border: 1px solid var(--color-quinary) !important;
+    transition: all 0.5s ease;
+  }
+  
+  .hogar-card-button .button-llamamos:hover{
+    background-color: var(--color-primary);
+    color: var(--color-tertiary);
+  }

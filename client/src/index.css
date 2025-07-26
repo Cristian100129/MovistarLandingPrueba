@@ -1,0 +1,230 @@
+@font-face {
+  font-family: "Telefonica Light";
+  src: url("https://db.onlinewebfonts.com/t/cce79751fc0a668d4b92f38c50b5c370.eot");
+  src: url("https://db.onlinewebfonts.com/t/cce79751fc0a668d4b92f38c50b5c370.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/cce79751fc0a668d4b92f38c50b5c370.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/cce79751fc0a668d4b92f38c50b5c370.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/cce79751fc0a668d4b92f38c50b5c370.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/cce79751fc0a668d4b92f38c50b5c370.svg#Telefonica Light")
+      format("svg");
+}
+
+@font-face {
+  font-family: "Telefonica";
+  src: url(./assets/fonts/Telefonica.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Telefonica Light", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+:root {
+  --color-primary: #00a94f;
+  --color-secondary: #004c97;
+  --color-tertiary: #ffffff;
+  --color-quaternary: #f5f5f5;
+  --color-quinary: #019df4;
+  --color-sextary: #0c2739;
+  --color-descuento: #f28d14;
+}
+
+.app {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.active {
+  border: 1px solid var(--color-primary);
+}
+.active-desktop {
+  border-bottom: 3px solid var(--color-primary);
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-content {
+  position: relative;
+  background: #0054a6; /* Azul Movistar */
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  padding: 24px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: scaleIn 0.3s ease-in-out;
+  color: white;
+}
+
+.close-button {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #e6f7ff;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.close-button:hover {
+  transform: scale(1.2);
+  color: #00c3ff;
+}
+
+/* 🔹 Estilos del formulario dentro del modal */
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-body h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.modal-body form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+/* 🔹 Input de teléfono */
+.modal-body input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #00a1e0; /* Azul Movistar claro */
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s;
+  color: black;
+}
+
+.modal-body input:focus {
+  border: 2px solid #00c3ff;
+  box-shadow: 0 0 10px rgba(0, 195, 255, 0.5);
+}
+
+/* 🔹 Checkbox y enlace */
+.modal-body div {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  font-size: 0.9rem;
+  color: #e6f7ff;
+}
+
+.modal-body div input[type="checkbox"] {
+  width: 16px;
+  margin-right: 8px;
+  accent-color: #00a1e0;
+}
+
+.modal-body div a {
+  color: #00c3ff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 4px;
+}
+
+.modal-body span a:hover {
+  text-decoration: underline;
+}
+
+/* 🔹 Botón de enviar */
+.modal-body button {
+  width: 100%;
+  padding: 12px;
+  background: #00c3ff; /* Azul Movistar */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: bold;
+}
+
+.modal-body button:hover {
+  background: #0078d4;
+  transform: scale(1.05);
+}
+
+/* 🔹 Estilos de mensajes de error */
+.error-message {
+  color: #ff4d4d;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: -6px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Responsividad */
+@media (max-width: 480px) {
+  .modal-content {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .modal-body h2 {
+    font-size: 20px;
+  }
+
+  .modal-body input,
+  .modal-body button {
+    font-size: 14px;
+  }
+}

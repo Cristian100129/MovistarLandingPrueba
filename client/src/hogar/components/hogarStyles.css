@@ -1,0 +1,298 @@
+.hogar-cards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.hogar-card{
+  width: 100%;
+  max-width: 300px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  margin: 20px;
+}
+.hogar-card-recomendado{
+  width: 100%;
+  background-color: var(--color-quinary);
+  color: var(--color-tertiary);
+  text-align: center;
+  padding: 10px;
+  border-radius: 12px 12px 0 0;
+}
+.hogar-card-megas{
+  padding: 10px;
+  font-weight: bold;
+  color: var(--color-quaternary);
+  background-color: var(--color-sextary);
+  text-align: center;
+}
+.hogar-card-megas h2{
+  font-size: 2em;
+  font-weight: normal;
+}
+
+.hogar-card-megas h3{
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.hogar-card-descuento{
+ width: 100%;
+  background-color: var(--color-descuento);
+  color: var(--color-tertiary);
+  text-align: center;
+}
+.hogar-card-precio{
+  padding: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--color-sextary);
+  background-color: var(--color-septenary);
+  text-align: center;
+}
+.hogar-card-precio h4{
+  font-size: 14px;
+  font-weight: normal;
+}
+.hogar-card-precio h3{
+  width: 100%;
+  background-color: #019ff486;
+  font-size: 18px;
+  font-weight: normal;
+  border-radius: 5px;
+}
+.hogar-card-precio h2{
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.hogar-card-button{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.hogar-card-button button{
+  width: 80%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.button-interesa{
+  background-color: var(--color-quinary);
+  color: var(--color-tertiary);
+  transition: all 0.5s ease;
+}
+.button-interesa:hover{
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-primary) !important;
+}
+
+.button-llamamos{
+  color : var(--color-quinary);
+  background-color: #fff;
+  border: 1px solid var(--color-quinary) !important;
+  transition: all 0.5s ease;
+}
+
+.button-llamamos:hover{
+  background-color: var(--color-primary);
+  color: var(--color-tertiary);
+}
+.hogar-card-img{
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 1rem;
+}
+
+.hogar-card-img-container{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+  background-color: var(--color-quaternary);
+  border-radius: 5px;
+}
+.hogar-card-img img{
+  width: 30px;
+  height: 30px;
+}
+/* 
+  Filter Styles
+*/
+
+.hogar-filter-container {
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background: linear-gradient(135deg, #0048aa 0%, #0078d4 100%);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    margin: 20px 0px;
+    margin: auto;
+  }
+  
+  .hogar-filter-label {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .hogar-filter-select {
+    width: 250px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #0048aa;
+    font-weight: 600;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  .hogar-filter-select:focus {
+    border-color: #00a2e8;
+    box-shadow: 0 0 10px rgba(0, 162, 232, 0.5);
+  }
+  
+  .hogar-filter-button {
+    background: #00a2e8;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .hogar-filter-button:hover {
+    background: #0078d4;
+    transform: scale(1.05);
+  }
+  
+  .hogar-filter-button:active {
+    background: #0056a3;
+    color: #ffffff;
+    transform: scale(1);
+  }
+
+  .hogar-filter-button span:active{
+    color: #ffffff;
+  }
+  .hogar-filter-container-desktop{
+    display: none;
+  }
+  @media (max-width: 768px) {
+    .hogar-filter-container {
+      flex-direction: column;
+      gap: 10px;
+      padding: 15px;
+    }
+  
+    .hogar-filter-select {
+      width: 100%;
+    }
+  
+    .hogar-filter-button {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .hogar-filter-container {
+      display: none;
+    }
+    
+    .hogar-filter-container-desktop {
+      display: block;
+      text-align: center;
+      margin: 20px 0;
+    }
+    
+    .hogar-filter-title-desktop {
+      font-size: 18px;
+      color: #004C97;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    
+    .hogar-filter-buttons-desktop {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+    
+    .hogar-filter-button-desktop {
+      background: #F0F3F5;
+      border: 2px solid transparent;
+      padding: 12px 20px;
+      border-radius: 12px;
+      cursor: pointer;
+      font-size: 16px;
+      color: #004C97;
+      font-weight: bold;
+      min-width: 180px;
+      transition: all 0.3s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .hogar-filter-button-desktop .plan-title-desktop {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    
+    .hogar-filter-button-desktop .plan-description-desktop {
+      font-size: 14px;
+      color: #555;
+      margin-top: 5px;
+    }
+
+    .hogar-filter-button-desktop.active .plan-description-desktop {
+      color: #fff;
+    }
+
+    .hogar-filter-button-desktop:hover .plan-description-desktop {
+      color: #fff;
+    }
+
+
+    
+    .hogar-filter-button-desktop:hover {
+      background: #004C97;
+      color: white;
+      transform: scale(1.05);
+    }
+    
+    .hogar-filter-button-desktop.active {
+      background: #004C97;
+      color: white;
+      border: 2px solid #002F6C;
+      transform: scale(1.08);
+    }
+    
+  }
