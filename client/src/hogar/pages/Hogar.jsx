@@ -48,7 +48,7 @@ export const Hogar = () => {
     <div className="hogar-container">
       <CompraExperto />
       <Header pathLocation={"hogar"} />
-      <BannerAnimation text={'¡Subimos la velocidad, no el precio! ¡Activa tu nueva velocidad de 900 Megas hoy mismo!'}/>
+      {/* <BannerAnimation text={'¡Subimos la velocidad, no el precio! ¡Activa tu nueva velocidad de 900 Megas hoy mismo!'}/> */}
       <ModalTeLlamamos
         isOpenTeLlamamos={isOpenTeLlamamos}
         toggleModalTeLlamamos={toggleModalTeLlamamos}

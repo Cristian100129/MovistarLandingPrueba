@@ -22,7 +22,7 @@ export const Home = () => {
     <ModalTeLlamamos
     isOpenTeLlamamos={isOpenTeLlamamos} toggleModalTeLlamamos={toggleModalTeLlamamos}
     />
-    <BannerAnimation text={'¡Subimos la velocidad, no el precio! ¡Activa tu plan pospago con 60 Gigas hoy mismo!'}/>
+    {/* <BannerAnimation text={'¡Subimos la velocidad, no el precio! ¡Activa tu plan pospago con 60 Gigas hoy mismo!'}/> */}
       <h2 className='title-h2'>Planes Pospago</h2>
       <div className='home-cards'>
       {

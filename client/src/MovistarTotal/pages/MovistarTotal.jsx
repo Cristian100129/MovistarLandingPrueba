@@ -38,7 +38,7 @@ export const MovistarTotal = () => {
     <div className="movistarTotal-container">
       <CompraExperto />
       <Header pathLocation={"movistartotal"} />
-      <BannerAnimation text={'¡Subimos la velocidad, no el precio! ¡Activa tu nueva velocidad de 900 Megas hoy mismo!'}/>
+      {/* <BannerAnimation text={'¡Subimos la velocidad, no el precio! ¡Activa tu nueva velocidad de 900 Megas hoy mismo!'}/> */}
       <ModalTeLlamamos
         isOpenTeLlamamos={isOpenTeLlamamos}
         toggleModalTeLlamamos={toggleModalTeLlamamos}
