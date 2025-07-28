@@ -40,7 +40,7 @@ export const Tecnologias = () => {
   return (
     <div className="contenedor-tecnologias">
       <Header pathLocation="tegnologias" />
-      <BannerAnimation text={'¡Movistar Celulares: Encuentra tus marcas favoritas!'}/>
+      {/* <BannerAnimation text={'¡Movistar Celulares: Encuentra tus marcas favoritas!'}/> */}
       <h2 className="title-h2">Tecnologías</h2>
 
       {/* Menú de selección de imágenes (Solo en Desktop) */}
